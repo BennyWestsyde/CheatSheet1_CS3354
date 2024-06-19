@@ -1,0 +1,232 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=0.1in, landscape]{geometry}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{enumitem}
+%\tcbuselibrary{breakable}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}
+\setlength{\columnsep}{1pt} % Adjust column separation
+
+% Define a custom box command
+\newtcolorbox{block}[1][]{
+  colback=white, % Background color
+  coltitle=white, % Title color
+  colbacktitle=black, % Title background color
+  colframe=black, % Border color
+  fonttitle=\bfseries\tiny, % Title font
+  fontupper=\tiny, % Text font
+  boxrule=0.5mm, % Border width
+  sharp corners, % No rounded corners
+  boxsep=1pt, % Padding
+  left=1pt, % Padding
+  right=1pt, % Padding
+  top=1pt, % Padding
+  bottom=1pt, % Padding 
+  title=#1, % Set the title to the first argument
+  parbox=false, % Allow text to break across pages
+  beforeafter skip=0pt
+}
+\begin{document}
+
+% Set up multicol for tightly packed boxes
+\begin{multicols}{5}
+    \begin{block}[Estimation and Planning Mistakes]
+        \begin{itemize}
+          \item \textbf{Underestimating complexity, cost, and/or schedule}
+          \begin{itemize}
+            \item Use historical data and expert judgment to estimate accurately.
+          \end{itemize}
+          \item \textbf{Abandoning planning under pressure}
+          \begin{itemize}
+            \item Stick to planning to avoid chaotic code-and-fix mode.
+          \end{itemize}
+          \item \textbf{Overly aggressive schedules}
+          \begin{itemize}
+            \item Set realistic schedules based on historical data and project complexity.
+          \end{itemize}
+          \item \textbf{Wasting time in the “fuzzy front end”}
+          \begin{itemize}
+            \item Streamline the approval and budgeting process.
+          \end{itemize}
+        \end{itemize}
+        \end{block}
+        
+        \begin{block}[Communication and Stakeholder Engagement Mistakes]
+        \begin{itemize}
+          \item \textbf{Poor communication}
+          \begin{itemize}
+            \item Hold regular meetings and ensure clear documentation.
+          \end{itemize}
+          \item \textbf{Not engaging stakeholders}
+          \begin{itemize}
+            \item Include stakeholders in planning and review sessions.
+          \end{itemize}
+          \item \textbf{Insufficient user input}
+          \begin{itemize}
+            \item Ensure active involvement of end-users throughout the project.
+          \end{itemize}
+        \end{itemize}
+        \end{block}
+        
+        \begin{block}[Project Management Mistakes]
+        \begin{itemize}
+          \item \textbf{Lack of oversight/poor project management}
+          \begin{itemize}
+            \item Appoint experienced project managers and conduct regular reviews.
+          \end{itemize}
+          \item \textbf{Adding developers to a late project}
+          \begin{itemize}
+            \item Avoid adding developers late in the project to prevent further delays.
+          \end{itemize}
+        \end{itemize}
+        \end{block}
+        
+        \begin{block}[Quality and Risk Management Mistakes]
+        \begin{itemize}
+          \item \textbf{Poor quality workmanship}
+          \begin{itemize}
+            \item Implement quality assurance processes and conduct regular code reviews.
+          \end{itemize}
+          \item \textbf{No risk management}
+          \begin{itemize}
+            \item Identify risks early and develop mitigation plans.
+          \end{itemize}
+          \item \textbf{Ignoring system performance requirements}
+          \begin{itemize}
+            \item Define and monitor performance requirements throughout the project.
+          \end{itemize}
+          \item \textbf{Poorly planned/managed transitions}
+          \begin{itemize}
+            \item Develop detailed transition plans and involve all relevant parties.
+          \end{itemize}
+        \end{itemize}
+        \end{block}
+
+\begin{block}[Agile Manifesto]
+    \begin{itemize}
+        \item Individuals and interactions over processes and tools.
+        \item Working software over comprehensive documentation.
+        \item Customer collaboration over contract negotiation.
+        \item Responding to change over following a plan.
+    \end{itemize}
+\end{block}
+
+\begin{block}[Agile Principles]
+    \begin{itemize}
+        \item Satisfy the customer with continuous delivery.
+        \item Welcome changing requirements.
+        \item Frequent delivery of working software.
+        \item Daily collaboration between business and developers.
+        \item Build projects around motivated individuals.
+        \item Face-to-face conversation for communication.
+        \item Working software as progress measure.
+        \item Promote sustainable development.
+        \item Continuous attention to technical excellence.
+        \item Simplicity is essential.
+        \item Best architectures emerge from self-organizing teams.
+        \item Regular reflection and adjustment.
+    \end{itemize}
+\end{block}
+
+\begin{block}[Scrum Roles]
+    \begin{itemize}
+        \item Product Owner:
+        \begin{itemize}
+            \item Maximizes product value.
+            \item Develops and communicates Product Goal.
+            \item Creates and prioritizes Product Backlog.
+            \item Ensures transparency and understanding of Backlog.
+            \item One person, not a committee, with leadership role.
+        \end{itemize}
+        \item Scrum Master:
+        \begin{itemize}
+            \item Facilitates Scrum process, resolves impediments.
+            \item Creates self-organization environment.
+            \item Captures empirical data, shields team from distractions.
+            \item Enforces timeboxes, keeps artifacts visible.
+            \item Promotes improved practices, has leadership role.
+        \end{itemize}
+        \item Development Team:
+        \begin{itemize}
+            \item Develops product, self-organizing, cross-functional.
+            \item No titles, no sub-teams, no specialized roles.
+            \item Long-term, full-time membership, 7 ± 2 members.
+        \end{itemize}
+    \end{itemize}
+\end{block}
+
+\begin{block}[Scrum Events]
+    \begin{itemize}
+        \item Sprints
+        \item Sprint Planning Meeting
+        \item Daily Scrum Meeting
+        \item Sprint Review Meeting
+        \item Sprint Retrospective
+    \end{itemize}
+\end{block}
+
+\begin{block}[Scrum Artifacts]
+    \begin{itemize}
+        \item \textbf{Product Backlog}
+        \begin{itemize}
+            \item Prioritized list of features.
+            \item Updated regularly.
+            \item Visible to all stakeholders.
+            \item Owned by Product Owner.
+        \end{itemize}
+        \item \textbf{Sprint Backlog}
+        \begin{itemize}
+            \item List of tasks for current Sprint.
+            \item Owned by Development Team.
+            \item Updated daily.
+            \item Created during Sprint Planning Meeting.
+            \item Decomposed from Product Backlog.
+        \end{itemize}
+        \item \textbf{Burndown Charts}
+        \begin{itemize}
+            \item Graphical representation of work remaining.
+            \item Updated daily.
+            \item Shows progress towards Sprint Goal.
+            \item Helps identify issues early.
+            \item Used to forecast project completion.
+        \end{itemize}
+    \end{itemize}
+\end{block}
+
+\begin{block}[Accidental vs Essential Complexity]
+\begin{itemize}
+  \item Essential complexity:
+    - Inherently difficult problems with no known solution.
+  \item Necessary accidental complexity:
+    - Example: project management.
+  \item Unnecessary accidental complexity:
+    - Waste, Lean, MEI (minimum essential information).
+\end{itemize}
+\end{block}
+
+\begin{block}[Best/Good/Recommended Practices]
+\begin{itemize}
+  \item "Best Practice":
+    - Consistently improves productivity, cost, schedule, quality, user satisfaction, predictability.
+  \item Best Practices (Glass, 2004):
+    - Development teams repeat mistakes.
+    - Best practice documents regurgitate textbook material.
+    - Growing field’s wisdom not increasing.
+\end{itemize}
+\end{block}
+
+
+\begin{block}[Agile Sweet Spots]
+\begin{itemize}
+  \item Dedicated developers.
+  \item Experienced developers.
+  \item Small co-located team.
+  \item Tools for testing and configuration management.
+  \item Easy user access.
+  \item Short increments and frequent delivery.
+\end{itemize}
+\end{block}
+
+\end{multicols}
+\end{document}
