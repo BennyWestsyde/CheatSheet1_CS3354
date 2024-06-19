@@ -4,6 +4,8 @@
 \usepackage{tcolorbox}
 \usepackage{multicol}
 \usepackage{enumitem}
+% set the font to a monospace font
+
 %\tcbuselibrary{breakable}
 \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}
 \setlength{\columnsep}{1pt} % Adjust column separation
@@ -28,80 +30,186 @@
   beforeafter skip=0pt
 }
 \begin{document}
-
+\ttfamily
 % Set up multicol for tightly packed boxes
 \begin{multicols}{5}
-    \begin{block}[Estimation and Planning Mistakes]
-        \begin{itemize}
-          \item \textbf{Underestimating complexity, cost, and/or schedule}
-          \begin{itemize}
-            \item Use historical data and expert judgment to estimate accurately.
-          \end{itemize}
-          \item \textbf{Abandoning planning under pressure}
-          \begin{itemize}
-            \item Stick to planning to avoid chaotic code-and-fix mode.
-          \end{itemize}
-          \item \textbf{Overly aggressive schedules}
-          \begin{itemize}
-            \item Set realistic schedules based on historical data and project complexity.
-          \end{itemize}
-          \item \textbf{Wasting time in the “fuzzy front end”}
-          \begin{itemize}
-            \item Streamline the approval and budgeting process.
-          \end{itemize}
-        \end{itemize}
-        \end{block}
-        
-        \begin{block}[Communication and Stakeholder Engagement Mistakes]
-        \begin{itemize}
-          \item \textbf{Poor communication}
-          \begin{itemize}
-            \item Hold regular meetings and ensure clear documentation.
-          \end{itemize}
-          \item \textbf{Not engaging stakeholders}
-          \begin{itemize}
-            \item Include stakeholders in planning and review sessions.
-          \end{itemize}
-          \item \textbf{Insufficient user input}
-          \begin{itemize}
-            \item Ensure active involvement of end-users throughout the project.
-          \end{itemize}
-        \end{itemize}
-        \end{block}
-        
-        \begin{block}[Project Management Mistakes]
-        \begin{itemize}
-          \item \textbf{Lack of oversight/poor project management}
-          \begin{itemize}
-            \item Appoint experienced project managers and conduct regular reviews.
-          \end{itemize}
-          \item \textbf{Adding developers to a late project}
-          \begin{itemize}
-            \item Avoid adding developers late in the project to prevent further delays.
-          \end{itemize}
-        \end{itemize}
-        \end{block}
-        
-        \begin{block}[Quality and Risk Management Mistakes]
-        \begin{itemize}
-          \item \textbf{Poor quality workmanship}
-          \begin{itemize}
-            \item Implement quality assurance processes and conduct regular code reviews.
-          \end{itemize}
-          \item \textbf{No risk management}
-          \begin{itemize}
-            \item Identify risks early and develop mitigation plans.
-          \end{itemize}
-          \item \textbf{Ignoring system performance requirements}
-          \begin{itemize}
-            \item Define and monitor performance requirements throughout the project.
-          \end{itemize}
-          \item \textbf{Poorly planned/managed transitions}
-          \begin{itemize}
-            \item Develop detailed transition plans and involve all relevant parties.
-          \end{itemize}
-        \end{itemize}
-        \end{block}
+  
+\begin{block}[Estimation and Planning Mistakes]
+  \begin{itemize}
+    \item \textbf{Underestimating complexity, cost, and/or schedule}
+    \begin{itemize}
+      \item Use historical data and expert judgment to estimate accurately.
+    \end{itemize}
+    \item \textbf{Abandoning planning under pressure}
+    \begin{itemize}
+      \item Stick to planning to avoid chaotic code-and-fix mode.
+    \end{itemize}
+    \item \textbf{Overly aggressive schedules}
+    \begin{itemize}
+      \item Set realistic schedules based on historical data and project complexity.
+    \end{itemize}
+    \item \textbf{Wasting time in the “fuzzy front end”}
+    \begin{itemize}
+      \item Streamline the approval and budgeting process.
+    \end{itemize}
+  \end{itemize}
+  \end{block}
+  
+  \begin{block}[Communication and Stakeholder Engagement Mistakes]
+  \begin{itemize}
+    \item \textbf{Poor communication}
+    \begin{itemize}
+      \item Hold regular meetings and ensure clear documentation.
+    \end{itemize}
+    \item \textbf{Not engaging stakeholders}
+    \begin{itemize}
+      \item Include stakeholders in planning and review sessions.
+    \end{itemize}
+    \item \textbf{Insufficient user input}
+    \begin{itemize}
+      \item Ensure active involvement of end-users throughout the project.
+    \end{itemize}
+  \end{itemize}
+  \end{block}
+  
+  \begin{block}[Project Management Mistakes]
+  \begin{itemize}
+    \item \textbf{Lack of oversight/poor project management}
+    \begin{itemize}
+      \item Appoint experienced project managers and conduct regular reviews.
+    \end{itemize}
+    \item \textbf{Adding developers to a late project}
+    \begin{itemize}
+      \item Avoid adding developers late in the project to prevent further delays.
+    \end{itemize}
+  \end{itemize}
+  \end{block}
+  
+  \begin{block}[Quality and Risk Management Mistakes]
+  \begin{itemize}
+    \item \textbf{Poor quality workmanship}
+    \begin{itemize}
+      \item Implement quality assurance processes and conduct regular code reviews.
+    \end{itemize}
+    \item \textbf{No risk management}
+    \begin{itemize}
+      \item Identify risks early and develop mitigation plans.
+    \end{itemize}
+    \item \textbf{Ignoring system performance requirements}
+    \begin{itemize}
+      \item Define and monitor performance requirements throughout the project.
+    \end{itemize}
+    \item \textbf{Poorly planned/managed transitions}
+    \begin{itemize}
+      \item Develop detailed transition plans and involve all relevant parties.
+    \end{itemize}
+  \end{itemize}
+  \end{block}
+
+  \begin{block}[Recursive vs Incremental vs Iterative Development]
+  \begin{itemize}
+    \item \textbf{Recursive}
+    \begin{itemize}
+      \item Repeatedly breaking down a problem into smaller parts until it is simple enough to solve.
+      \item Example: Divide and conquer.
+    \end{itemize}
+    \item \textbf{Incremental}
+    \begin{itemize}
+      \item Start by building the core functionality and then add features in subsequent increments.
+      \item Example: Agile.
+    \end{itemize}
+    \item \textbf{Iterative}
+    \item \begin{itemize}
+      \item Develop a system through repetition of cycles (iterations)
+      \item Example: Scrum.
+    \end{itemize}
+  \end{itemize}
+  \end{block}
+
+  
+  \begin{block}[Unified Process]
+    \begin{itemize}
+      \item \textbf{Workflows}
+      \begin{itemize}
+        \item Defines activities in process.
+        \item Each activity has inputs and outputs.
+      \end{itemize}
+      \item \textbf{Phases}
+      \begin{itemize}
+        \item Inception
+        \item Elaboration
+        \item Construction
+        \item Transition
+      \end{itemize}
+    \end{itemize}
+  \end{block}
+  
+  \begin{block}[Cynefin Framework]
+    \begin{itemize}
+      \item \textbf{Simple}
+      \begin{itemize}
+        \item Cause and effect are obvious.
+        \item Best practice.
+      \end{itemize}
+      \item \textbf{Complicated}
+      \begin{itemize}
+        \item Cause and effect are discoverable.
+        \item Good practice.
+      \end{itemize}
+      \item \textbf{Complex}
+      \begin{itemize}
+        \item Cause and effect are only obvious in hindsight.
+        \item Emergent practice.
+      \end{itemize}
+      \item \textbf{Chaotic}
+      \begin{itemize}
+        \item No cause and effect relationship.
+        \item Novel practice.
+      \end{itemize}
+    \end{itemize}
+  \end{block}
+
+  \begin{block}[Predictive vs Adaptive Development]
+    \begin{itemize}
+      \item \textbf{Predictive}
+      \begin{itemize}
+        \item Plan-driven.
+        \item Requirements are stable.
+        \item Example: Waterfall.
+      \end{itemize}
+      \item \textbf{Adaptive}
+      \begin{itemize}
+        \item Change-driven.
+        \item Requirements are volatile.
+        \item Example: Agile.
+      \end{itemize}
+    \end{itemize}
+  \end{block}
+  
+  \begin{block}[Waterfall Model]
+    \begin{itemize}
+      \item \textbf{Requirements}
+      \begin{itemize}
+        \item Define system requirements.
+      \end{itemize}
+      \item \textbf{Design}
+      \begin{itemize}
+        \item Develop system architecture.
+      \end{itemize}
+      \item \textbf{Implementation}
+      \begin{itemize}
+        \item Write and test code.
+      \end{itemize}
+      \item \textbf{Verification}
+      \begin{itemize}
+        \item Test system.
+      \end{itemize}
+      \item \textbf{Maintenance}
+      \begin{itemize}
+        \item Fix bugs and add features.
+      \end{itemize}
+    \end{itemize}
+  \end{block}
 
 \begin{block}[Agile Manifesto]
     \begin{itemize}
@@ -121,7 +229,7 @@
         \item Build projects around motivated individuals.
         \item Face-to-face conversation for communication.
         \item Working software as progress measure.
-        \item Promote sustainable development.
+        \item Promote sustainable Dev.
         \item Continuous attention to technical excellence.
         \item Simplicity is essential.
         \item Best architectures emerge from self-organizing teams.
@@ -147,7 +255,7 @@
             \item Enforces timeboxes, keeps artifacts visible.
             \item Promotes improved practices, has leadership role.
         \end{itemize}
-        \item Development Team:
+        \item Dev Team:
         \begin{itemize}
             \item Develops product, self-organizing, cross-functional.
             \item No titles, no sub-teams, no specialized roles.
@@ -156,14 +264,35 @@
     \end{itemize}
 \end{block}
 
-\begin{block}[Scrum Events]
+
+
+\begin{block}[Scrum Cycle]
     \begin{itemize}
-        \item Sprints
-        \item Sprint Planning Meeting
-        \item Daily Scrum Meeting
-        \item Sprint Review Meeting
-        \item Sprint Retrospective
-    \end{itemize}
+        \item \textbf{Sprint Planning}
+        \begin{itemize}
+            \item Product Owner presents Product Backlog.
+            \item Dev Team selects items for Sprint Backlog.
+            \item Sprint Goal is defined.
+        \end{itemize}
+        \item \textbf{Daily Scrum}
+        \begin{itemize}
+            \item 15-minute meeting.
+            \item Dev Team plans work for next 24 hours.
+            \item Scrum Master enforces timebox.
+        \end{itemize}
+        \item \textbf{Sprint Review}
+        \begin{itemize}
+            \item Product Owner presents completed work.
+            \item Dev Team demonstrates work.
+            \item Stakeholders provide feedback.
+        \end{itemize}
+        \item \textbf{Sprint Retrospective}
+        \begin{itemize}
+            \item Dev Team reflects on Sprint.
+            \item Scrum Master facilitates discussion.
+            \item Team identifies improvements.
+        \end{itemize}
+    \end{itemize}    
 \end{block}
 
 \begin{block}[Scrum Artifacts]
@@ -178,7 +307,7 @@
         \item \textbf{Sprint Backlog}
         \begin{itemize}
             \item List of tasks for current Sprint.
-            \item Owned by Development Team.
+            \item Owned by Dev Team.
             \item Updated daily.
             \item Created during Sprint Planning Meeting.
             \item Decomposed from Product Backlog.
@@ -193,6 +322,23 @@
         \end{itemize}
     \end{itemize}
 \end{block}
+
+\begin{block}[Increment \& Done]
+    \begin{itemize}
+        \item A formal description of the state of the Increment when it meets the quality measures required for the product.
+        \item The moment a Product Backlog item meets the Definition of Done, an Increment is born.
+        \item If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review.
+    \end{itemize}
+\end{block}
+
+\begin{block}[No Silver Bullet]
+    \begin{itemize}
+        \item Scrum will not solve your problems.
+        \item Scrum will make your problems visible.
+        \item You will have to solve your problems.
+    \end{itemize}
+\end{block}
+
 
 \begin{block}[Accidental vs Essential Complexity]
 \begin{itemize}
@@ -210,9 +356,9 @@
   \item "Best Practice":
     - Consistently improves productivity, cost, schedule, quality, user satisfaction, predictability.
   \item Best Practices (Glass, 2004):
-    - Development teams repeat mistakes.
+    - Dev teams repeat mistakes.
     - Best practice documents regurgitate textbook material.
-    - Growing field’s wisdom not increasing.
+    - Growing field's wisdom not increasing.
 \end{itemize}
 \end{block}
 
@@ -227,6 +373,221 @@
   \item Short increments and frequent delivery.
 \end{itemize}
 \end{block}
+
+\begin{block}[Requirements Volatility]
+\begin{itemize}
+  \item \textbf{Failure to consider how requirements will change}
+  \begin{itemize}
+    \item Requirements change about 2\% per month for typical project.
+    \item Change rates of 35-50\% for large projects.
+    \item Typical software project experiences 25\% change in requirements.
+  \end{itemize}
+\end{itemize}
+\end{block}
+
+
+\begin{block}[Requirements Elicitation]
+\begin{itemize}
+  \item \textbf{Interviews}
+  \begin{itemize}
+    \item \underline{Structured interviews}
+    \begin{itemize}
+      \item Specific preplanned questions are asked.
+    \end{itemize}
+    \item \underline{Unstructured interview}
+    \begin{itemize}
+      \item Questions are posed in response to the answers received.
+    \end{itemize}
+  \end{itemize}
+  \item \textbf{Questions}
+  \begin{itemize}
+    \item \underline{Open-ended questions}
+    \begin{itemize}
+      \item Questions are posed to encourage the client to provide more information.
+    \end{itemize}
+    \item \underline{Closed-ended questions}
+    \begin{itemize}
+      \item Questions are posed to answer specific questions.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}[Requirements Design]
+  \begin{itemize}
+    \item \textbf{Functional Requirements}
+    \begin{itemize}
+      \item Define system behavior.
+      \item Define what system should do.
+    \end{itemize}
+    \item \textbf{Non-Functional Requirements}
+    \begin{itemize}
+      \item Describe system properties and constraints.
+      \item Define how system should do it.
+    \end{itemize}
+  \end{itemize}
+\end{block}
+
+\begin{block}[Requirements Analysis]
+  \begin{itemize}
+    \item \textbf{Functional Decomposition}
+    \begin{itemize}
+      \item Breaks down system into smaller components.
+      \item Each component has a specific function.
+    \end{itemize}
+    \item \textbf{Data Flow Diagrams}
+    \begin{itemize}
+      \item Shows how data flows through system.
+      \item Identifies sources and destinations of data.
+    \end{itemize}
+    \item \textbf{State Diagrams}
+    \begin{itemize}
+      \item Shows how system responds to events.
+      \item Identifies states system can be in.
+    \end{itemize}
+    \item \textbf{Entity-Relationship Diagrams}
+    \begin{itemize}
+      \item Shows how data is related in system.
+      \item Identifies entities and relationships.
+    \end{itemize}
+  \end{itemize}
+\end{block}
+
+\begin{block}[Characteristics of a good requirement]
+\begin{itemize}
+  \item \textbf{Necessary}
+  \begin{itemize}
+    \item Defines an essential capability, characteristic, constraint, and/or quality factor.
+    \item If removed, a deficiency will exist.
+  \end{itemize}
+  \item \textbf{Implementation Free}
+  \begin{itemize}
+    \item Avoids placing unnecessary constraints on the architectural design.
+    \item States what is required, not how the requirement will be satisfied.
+  \end{itemize}
+  \item \textbf{Unambiguous}
+  \begin{itemize}
+    \item The requirement is stated in such a way so that it can be interpreted in only one way.
+    \item The requirement is stated simply and is easy to understand.
+    \end{itemize}
+  \item \textbf{Consistent}
+  \begin{itemize}
+    \item The requirement is free of conflicts with other requirements.
+  \end{itemize}
+  \item \textbf{Complete}
+  \begin{itemize}
+    \item The stated requirement needs no further amplification because it is measurable and sufficiently describes the capability and characteristics to meet the stakeholder's need.
+  \end{itemize}
+  \item \textbf{Singular}
+  \begin{itemize}
+    \item The requirement statement includes only one requirement with no use of conjunctions.
+  \end{itemize}
+  \item \textbf{Feasible}
+  \begin{itemize}
+    \item The requirement is technically achievable, does not require major technology advances, and fits within system constraints (e.g., cost, schedule, technical, legal, regulatory) with acceptable risk.
+  \end{itemize}
+  \item \textbf{Traceable}
+  \begin{itemize}
+    \item The requirement is upwards traceable to specific documented stakeholder statement(s) of need, higher tier requirement, or other source (e.g., a trade or design study).
+    \item The requirement is also downwards traceable to the specific requirements in the lower tier requirements specification or other system definition artefacts.
+  \end{itemize}
+  \item \textbf{Verifiable}
+  \begin{itemize}
+    \item The requirement has the means to prove that the system satisfies the specified requirement.
+  \end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}[Characteristics of a good \textbf{set of} requirements]
+\begin{itemize}
+  \item \textbf{Complete}
+  \begin{itemize}
+    \item Needs no further amplification.
+    \item Acceptable timeframe for TBD items.
+  \end{itemize}
+  \item \textbf{Consistent}
+  \begin{itemize}
+    \item No contradictory requirements.
+    \item No duplicated requirements.
+    \item Same term used for same item.
+  \end{itemize}
+  \item \textbf{Affordable}
+  \begin{itemize}
+    \item Can be satisfied by a feasible solution.
+    \item Within life cycle constraints.
+  \end{itemize}
+  \item \textbf{Bounded}
+  \begin{itemize}
+    \item Maintains identified scope.
+    \item Does not increase beyond what is needed.
+  \end{itemize}
+\end{itemize}
+\end{block}
+
+\begin{block}[Use Cases vs User Stories]
+  \begin{itemize}
+    \item \textbf{Use cases}
+    \begin{itemize}
+      \item A set of scenarios that identify a thread of usage for the system to be constructed.
+      \item Tells a stylized story about how an end user interacts with the system under a specific set of circumstances.
+      \item Captures a contract that describes the system's behavior under various conditions as the system responds to a request from one of its stakeholders.
+      \item NOT OBJECT ORIENTED.
+    \end{itemize}
+    \item \textbf{User stories}
+    \begin{itemize}
+      \item A promise to have a discussion; not every detail needs to be included.
+      \item Describes functionality that will be valuable to either a user or purchaser of a system.
+      \item \underline{Card}
+      \begin{itemize}
+        \item Written description of the story used for planning and as a reminder.
+      \end{itemize}
+      \item \underline{Conversation}
+      \begin{itemize}
+        \item About the story that serve to flesh out the details of the story.
+      \end{itemize}
+      \item \underline{Confirmation}
+      \begin{itemize}
+        \item Details that can be used to determine when a story is complete.
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{block}
+
+\begin{block}[Use Case Format]
+  \begin{itemize}
+    \item Our user starts by [action]
+    \item Then, the system [response]
+    \item The user then [reacts]
+    \item Finally, the system [result]
+    \item Leaving the user [result]
+  \end{itemize}
+\end{block}
+
+
+\begin{block}[User Story Format]
+  \begin{itemize}
+    \item \textbf{As a} [role]
+    \item \textbf{I want} [feature]
+    \item \textbf{So that} [benefit]
+  \end{itemize}
+\end{block}
+
+
+\begin{block}[Facts and Figures]
+  \begin{itemize}
+    \item \textbf{Requirements volatility}
+    \begin{itemize}
+      \item 2\% per month for typical project.
+      \item 35-50\% for large projects.
+      \item 25\% change in requirements for typical software project.
+    \end{itemize}
+    \item \textbf{Scrum Team Size}
+    \begin{itemize}
+      \item 7 ± 2 members or < 10 members.
+    \end{itemize}
+  \end{itemize}
+  \end{block}
+
 
 \end{multicols}
 \end{document}
